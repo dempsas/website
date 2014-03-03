@@ -1,0 +1,513 @@
+/*
+StyleSheet for my website
+Adam Dempsey
+*/
+
+/*CSS RESET Because fuck you defaults*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+a:-webkit-any-link {
+    color: #000000;
+    text-decoration: none;
+    cursor: auto;
+}
+
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ICON FONTS thank you based IcoMoon
+
+*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?aknw03');
+    src:url('fonts/icomoon.eot?#iefixaknw03') format('embedded-opentype'),
+        url('fonts/icomoon.woff?aknw03') format('woff'),
+        url('fonts/icomoon.ttf?aknw03') format('truetype'),
+        url('fonts/icomoon.svg?aknw03#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+    color: #4875B4;
+    content: "\e602";
+}
+.icon-twitter:before {
+    color: #0099ec;
+    content: "\e601";
+}
+.icon-px:before {
+    content: "\e600";
+}
+
+
+
+/* 
+Actual CSS starts here 
+My class names are as imaginative as bread
+*/
+
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    line-height: 1.1em;
+    margin: 0 0 0 0;
+}
+p{
+    margin-top: 10px;
+    line-height: 1.3em;
+}
+
+h2{
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    float: left;
+}
+
+.innerContainer{
+    width: 70%;
+    margin: auto;
+}
+
+
+header{
+    background-color: whitesmoke;
+    opacity:0.9;
+    width: 100%;
+    height: 60px;
+    float: left;
+    position: fixed;
+    top: 0; 
+    left: 0;
+}
+
+.bigheader{
+    width: 100%;
+    height: 100vh;
+    background-image:url("header.jpg");
+    background-size: cover;
+    box-shadow: 0px 2px 5px #000000;
+}
+
+#welcome{
+    font-size: 40pt;
+    opacity: 0.7;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    top: 50%;
+    color: #FFFFFF;
+    display: none;
+}
+
+#menu{
+    margin: 15px 15px 0 0;
+    display: none;
+    width: 25px;
+    height: 25px;
+    opacity: 0.6;
+    float: right;
+    padding: 0 0 15px 15px;
+}
+
+
+
+.headerContainer{
+    width:70%;
+    margin: auto;
+
+}
+
+nav ul {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 0 0;
+}
+
+nav ul li {
+    display: block;
+    position: relative;
+    float: left;
+
+}
+
+nav li ul { 
+    display: none; 
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 10px 10px 10px;
+    color: #000000;  
+    margin-left: 1px;
+    height:auto;
+    width:100px;
+    text-align:center;
+
+}
+nav ul li a:hover{
+    color: #65acf2;
+    -o-transition:color .2s ease-out, background 1s ease-in;
+    -ms-transition:color .2s ease-out, background 1s ease-in;
+    -moz-transition:color .2s ease-out, background 1s ease-in;
+    -webkit-transition:color .2s ease-out, background 1s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color .2s ease-out, background 1s ease-in;
+}
+.socialIcons{
+    float:right;
+    margin-right: 30px;
+}
+
+.socialIcons ul {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 0 0;
+}
+
+.socialIcons ul li {
+    display: block;
+    position: relative;
+    float: left;
+
+}
+
+.socialIcons li ul { 
+    display: none; 
+}
+
+.socialIcons ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 0px 10px 10px;
+    color: #000000;  
+    margin-left: 1px;
+    height:auto;
+    width:30px;
+    text-align:center;
+
+}
+
+.socialIcons ul li a:hover {
+    font-size: 26px;
+}
+
+.topSection{
+    width:100%;
+    height: 900px;
+    /*
+    Lets jump on the flat bandwagon
+    background-image:url('ticks.png');
+    */
+    background-color: #e6e7e9;
+    float:left;
+
+
+}
+
+.myFace{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto 0 auto;
+    background-image: url("myFace.jpg");
+    background-size: 100% auto;
+    border: 10px solid #555555;
+    -webkit-border-radius: 200px; /* Saf3+, Chrome */
+    border-radius: 200px;
+
+}
+
+.underWater{
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 1;
+    background-image: url("webAvi.jpg");
+    background-size: 100% auto;
+    -webkit-border-radius: 200px; /* Saf3+, Chrome */
+    border-radius: 200px;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    /* Opera 10.5, IE 9 */
+    /*-moz-border-radius: 30px;  Disabled for FF1+ */
+
+}
+
+.underWater:hover{
+    opacity: 0;
+}
+
+.middle{
+    width:100%;
+    height: 900px;
+    background-color: #666666;
+    color: #eaebe5;
+    float:left;
+
+}
+
+.myWork{
+    width: 80%;
+    margin: 10px auto;
+    min-height: 500px;
+    
+}
+.last{
+    width:100%;
+    height: 900px;
+    background-color: #e9e8e5;
+    float:left;
+}
+
+.textContainer1{
+    width:80%;
+    margin: 60px auto 0 auto;
+    text-align: center;
+
+}
+.textContainer1 h2{
+    text-align: center;
+    font-size: 2.5em
+}
+.textContainer2{
+    width:100%;
+    margin: 70px auto 0 auto;
+
+}
+.textContainer3{
+    width:100%;
+    margin: 70px auto 0 auto;
+
+}
+
+
+footer{
+    width:100%;
+    height: 100px;
+    background-color: #646464;
+    color: #e5e3e3;
+    float:left;
+    z-index: 0;
+}
+
+.footerText{
+    float:right;
+    margin: 45px 0 0 0;
+    color:#ececec;
+    font-size: 0.6em;
+}
+
+
+
+@media (max-width: 768px){
+    header{
+        height: auto;
+        opacity: 1;
+    }
+    
+    body{
+        font-size: 1.2em;
+    }
+
+    .bigheader{
+        height: 200px;
+        margin-top: 50px;
+        background-size: 100% auto;
+    }
+
+    .headerContainer{
+        width: 100%;
+        float: left;
+        display: none;
+    }
+    nav ul{
+        padding: 15px;
+        list-style: none;
+        float: left;
+    }
+    nav ul li {
+        float: none;
+
+    }
+
+    nav li ul { 
+        display: none; 
+    }
+
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 25px 5px 10px 10px;
+        color: #000000;  
+        margin-left: 0px;
+        width:100px;
+        text-align:left;
+    }
+    
+
+    #menu{
+        display: block;
+    }
+
+    .socialIcons{
+        margin: 15px 15px 0 0;
+    }
+
+    .socialIcons ul li{
+        float: none;
+    }
+
+    .socialIcons ul li a:hover {
+        font-size: 25px;
+    }
+
+    .innerContainer{
+        width: 90%;
+    }
+    
+
+    .textContainer1{
+        width:100%;
+        float:left;
+        margin: 20px auto 50px auto;
+
+    }
+    
+    .textContainer2{
+        width:100%;
+        float:none;
+        margin: 50px auto 50px auto;
+
+    }
+    .textContainer3{
+        width:100%;
+        float:none;
+        margin: 50px auto 50px auto;
+
+    }
+    
+    .blueLink{
+        color: #65acf2 !important;
+    }
+
+    .myFace{
+        float:none;
+        width: 100px;
+        height: 100px;
+        margin: 20px auto 0 auto;
+        background-image: url("myFace.jpg");
+        background-size: 100% auto;
+        border: 10px solid #555555;
+        -webkit-border-radius: 100px; /* Saf3+, Chrome */
+        border-radius: 100px;
+    }
+
+    .topSection{
+        height: auto;
+        min-height: 500px;
+    }
+
+    .middle{
+        height: auto;
+        min-height: 500px;
+    }
+
+    .last{
+        height: auto;
+        min-height: 500px;
+    }
+
+    #welcome{
+        width: auto;
+        top:45%;
+    }
+
+    footer{
+        height: 50px;
+    }
+
+    .footerText{
+        float: left;
+        margin: 10px 0 0 0;
+    }
+    .underWater{
+        opacity: 0;
+    }
+
+
+
+
+}
+
+
