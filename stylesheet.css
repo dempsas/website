@@ -102,19 +102,20 @@ table {
 
 /* 
 Actual CSS starts here 
-My class names are as imaginative as bread
 */
 
 body{
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
+    color: #333;
     line-height: 1.1em;
     margin: 0 0 0 0;
 }
 p{
-    margin-top: 10px;
+    margin: 5px 0;
     line-height: 1.3em;
+    display: inline-block;
 }
 
 h2{
@@ -122,10 +123,17 @@ h2{
     line-height: 1.5em;
 }
 
+.introText{
+    margin-bottom: 100px;
+}
+
 .container{
     width: 100%;
     margin: auto;
     float: left;
+    position: relative;
+    background-color: #e6e7e9;
+    z-index: 2;
 }
 
 .innerContainer{
@@ -143,26 +151,36 @@ header{
     position: fixed;
     top: 0; 
     left: 0;
+    z-index: 100;
+}
+
+.headerOverlay{
+    background-color: #333;
+    opacity: 0.2;
 }
 
 .bigheader{
     width: 100%;
     height: 100vh;
-    background-image:url("header.jpg");
+    background:url("header2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     box-shadow: 0px 2px 5px #000000;
+    opacity: 1;
 }
 
 #welcome{
     font-size: 40pt;
-    opacity: 0.7;
+    opacity: 0.9;
     position: relative;
     width: 50%;
-    margin: auto;
     text-align: center;
     top: 50%;
     color: #FFFFFF;
     display: none;
+    z-index: 0;
 }
 
 #menu{
@@ -264,26 +282,50 @@ nav ul li a:hover{
 
 .topSection{
     width:100%;
-    height: 900px;
-    /*
-    Lets jump on the flat bandwagon
-    background-image:url('ticks.png');
-    */
     background-color: #e6e7e9;
     float:left;
+}
 
+.smallerText{
+    font-size: 0.7em;
+}
 
+.work_thumbnails{
+    float: left;
+    width: 30%;
+    margin: 0 1.5%;
+    -webkit-border-radius: 200px; /* Saf3+, Chrome */
+    border-radius: 200px;
+}
+
+.bottomText{
+    margin-bottom: 30px;
 }
 
 .myFace{
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 260px;
     margin: 100px auto 0 auto;
-    background-image: url("myFace.jpg");
+    background-image: url("webAvi.jpg");
     background-size: 100% auto;
-    border: 10px solid #555555;
+    border: 10px solid #e6e7e9;
     -webkit-border-radius: 200px; /* Saf3+, Chrome */
     border-radius: 200px;
+
+}
+.photos{
+    margin: 20px auto 20px auto;
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    display: table;
+
+}
+
+
+.photoFill{
+    width: 100%;
+    margin: 20px 0;
 
 }
 
@@ -292,7 +334,7 @@ nav ul li a:hover{
     height: 100%;
     z-index: 99;
     opacity: 1;
-    background-image: url("webAvi.jpg");
+    background-image: url("myshot.jpg");
     background-size: 100% auto;
     -webkit-border-radius: 200px; /* Saf3+, Chrome */
     border-radius: 200px;
@@ -310,35 +352,34 @@ nav ul li a:hover{
 
 .middle{
     width:100%;
-    height: 900px;
-    background-color: #666666;
-    color: #eaebe5;
+    background-color: #E0E0E0;
     float:left;
 
 }
 
 .myWork{
-    width: 80%;
-    margin: 10px auto;
-    min-height: 500px;
-    
+    margin: 20px auto;
+    float: left;
+    height: auto;
+
 }
 .last{
     width:100%;
-    height: 900px;
+    min-height: 900px;
     background-color: #e9e8e5;
     float:left;
 }
 
 .textContainer1{
     width:80%;
-    margin: 60px auto 0 auto;
+    margin: 20px auto 50px auto;
     text-align: center;
 
 }
 .textContainer1 h2{
     text-align: center;
-    font-size: 2.5em
+    font-size: 2.5em;
+
 }
 .textContainer2{
     width:100%;
@@ -354,19 +395,20 @@ nav ul li a:hover{
 
 footer{
     width:100%;
-    height: 100px;
-    background-color: #646464;
+    height: 200px;
+    background-color: #333;
     color: #e5e3e3;
     float:left;
     z-index: 0;
 }
 
 .footerText{
-    float:right;
-    margin: 45px 0 0 0;
+    margin: 95px 0 0 0;
     color:#ececec;
     font-size: 0.6em;
+    text-align: center;
 }
+
 
 
 
@@ -375,7 +417,7 @@ footer{
         height: auto;
         opacity: 1;
     }
-    
+
     body{
         font-size: 1.2em;
     }
@@ -383,7 +425,6 @@ footer{
     .bigheader{
         height: 200px;
         margin-top: 50px;
-        background-size: 100% auto;
     }
 
     .headerContainer{
@@ -414,7 +455,7 @@ footer{
         width:100px;
         text-align:left;
     }
-    
+
 
     #menu{
         display: block;
@@ -435,15 +476,15 @@ footer{
     .innerContainer{
         width: 90%;
     }
-    
+
 
     .textContainer1{
         width:100%;
         float:left;
-        margin: 20px auto 50px auto;
+        margin: 10px auto 10px auto;
 
     }
-    
+
     .textContainer2{
         width:100%;
         float:none;
@@ -456,56 +497,56 @@ footer{
         margin: 50px auto 50px auto;
 
     }
-    
+
     .blueLink{
         color: #65acf2 !important;
     }
 
     .myFace{
         float:none;
-        width: 100px;
-        height: 100px;
-        margin: 20px auto 0 auto;
-        background-image: url("myFace.jpg");
+        width: 160px;
+        height: 160px;
+        margin: 60px auto 0 auto;
+        background-image: url("myshot.jpg");
         background-size: 100% auto;
-        border: 10px solid #555555;
+        border: 10px solid #e6e7e9;
         -webkit-border-radius: 100px; /* Saf3+, Chrome */
         border-radius: 100px;
     }
 
     .topSection{
         height: auto;
-        min-height: 500px;
     }
 
     .middle{
         height: auto;
-        min-height: 500px;
     }
 
     .last{
         height: auto;
-        min-height: 500px;
+    }
+
+    .introText{
+        margin-bottom: 20px;
     }
 
     #welcome{
         width: auto;
         top:45%;
+        position: relative;
     }
 
     footer{
-        height: 50px;
+        height: auto;
     }
 
     .footerText{
         float: left;
-        margin: 10px 0 0 0;
+        margin: 15px 0 5px 0;
     }
     .underWater{
         opacity: 0;
     }
-
-
 
 
 }
