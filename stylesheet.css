@@ -157,6 +157,7 @@ header{
 .headerOverlay{
     background-color: #333;
     opacity: 0.2;
+    
 }
 
 .bigheader{
@@ -173,7 +174,6 @@ header{
 
 #welcome{
     font-size: 40pt;
-    opacity: 0.9;
     position: relative;
     width: 50%;
     text-align: center;
@@ -328,6 +328,10 @@ nav ul li a:hover{
     margin: 20px 0;
 
 }
+li{
+    height: 100% !important;
+}
+
 
 .underWater{
     width: 100%;
@@ -365,7 +369,6 @@ nav ul li a:hover{
 }
 .last{
     width:100%;
-    min-height: 900px;
     background-color: #e9e8e5;
     float:left;
 }

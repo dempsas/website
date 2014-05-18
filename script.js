@@ -53,6 +53,11 @@ $(document).ready(function() {
             $("#headerContainer").slideUp('slow');
         }
     });
+    
+    $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+  
 
 
 
