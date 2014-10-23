@@ -1,23 +1,91 @@
 /*
 StyleSheet for my website
-Adam Dempsey
+@author Adam Dempsey 
 */
 
-/*CSS RESET Because fuck you defaults*/
+/*CSS Reset to be on the safe side*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -25,30 +93,39 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-
 a:-webkit-any-link {
     color: #000000;
     text-decoration: none;
     cursor: auto;
 }
-
-
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 body {
     line-height: 1;
 }
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -57,54 +134,63 @@ table {
     border-spacing: 0;
 }
 
-/* ICON FONTS thank you based IcoMoon
+/* 
+
+    ICON FONTS thank you based IcoMoon ^(0_0)^ dunno where I would be without you somedays
 
 */
 
 @font-face {
-    font-family: 'icomoon';
-    src:url('fonts/icomoon.eot?aknw03');
-    src:url('fonts/icomoon.eot?#iefixaknw03') format('embedded-opentype'),
-        url('fonts/icomoon.woff?aknw03') format('woff'),
-        url('fonts/icomoon.ttf?aknw03') format('truetype'),
-        url('fonts/icomoon.svg?aknw03#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'icomoon';
+	src:url('assets/fonts/icomoon.eot?-mvmwxv');
+	src:url('assets/fonts/icomoon.eot?#iefix-mvmwxv') format('embedded-opentype'),
+		url('assets/fonts/icomoon.woff?-mvmwxv') format('woff'),
+		url('assets/fonts/icomoon.ttf?-mvmwxv') format('truetype'),
+		url('assets/fonts/icomoon.svg?-mvmwxv#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-linkedin:before {
-    color: #4875B4;
-    content: "\e602";
+.icon-logotest2:before {
+	content: "\e604";
 }
 .icon-twitter:before {
-    color: #0099ec;
-    content: "\e601";
+	content: "\e600";
 }
 .icon-px:before {
-    content: "\e600";
+	content: "\e601";
 }
-
+.icon-instagram:before {
+	content: "\e602";
+}
+.icon-linkedin:before {
+	content: "\e603";
+}
 
 
 /* 
-Actual CSS starts here 
+
+    170ish lines down and we are at the real CSS... 
+
+    Yep that happened
+
 */
 
-body{
+body {
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
@@ -112,22 +198,19 @@ body{
     line-height: 1.1em;
     margin: 0 0 0 0;
 }
-p{
+p {
     margin: 5px 0;
     line-height: 1.3em;
     display: inline-block;
 }
-
-h2{
+h2 {
     font-size: 2em;
     line-height: 1.5em;
 }
-
-.introText{
+.introText {
     margin-bottom: 100px;
 }
-
-.container{
+.container {
     width: 100%;
     margin: auto;
     float: left;
@@ -135,44 +218,114 @@ h2{
     background-color: #e6e7e9;
     z-index: 2;
 }
-
-.innerContainer{
+.innerContainer {
     width: 70%;
     margin: auto;
 }
-
-
-header{
+header {
     background-color: whitesmoke;
-    opacity:0.9;
+    opacity: 0.9;
     width: 100%;
     height: 60px;
     float: left;
     position: fixed;
-    top: 0; 
+    top: 0;
     left: 0;
     z-index: 100;
 }
-
-.headerOverlay{
+.headerOverlay {
     background-color: #333;
     opacity: 0.2;
-    
 }
-
-.bigheader{
+#menu {
+    margin: 15px 15px 0 0;
+    display: none;
+    width: 25px;
+    height: 25px;
+    opacity: 0.6;
+    float: right;
+    padding: 0 0 15px 15px;
+}
+.headerContainer {
+    width: 70%;
+    margin: auto;
+}
+nav ul {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 0 0;
+}
+nav ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+nav li ul {
+    display: none;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 10px 10px 10px;
+    color: #000000;
+    margin-left: 1px;
+    height: auto;
+    width: 100px;
+    text-align: center;
+}
+nav ul li a:hover {
+    color: #65acf2;
+    -o-transition: color .2s ease-out, background 1s ease-in;
+    -ms-transition: color .2s ease-out, background 1s ease-in;
+    -moz-transition: color .2s ease-out, background 1s ease-in;
+    -webkit-transition: color .2s ease-out, background 1s ease-in;
+    /* ...and now override with proper CSS property */
+    transition: color .2s ease-out, background 1s ease-in;
+}
+.socialIcons {
+    float: right;
+    margin-right: 30px;
+}
+.socialIcons ul {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 0 0;
+}
+.socialIcons ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+.socialIcons li ul {
+    display: none;
+}
+.socialIcons ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 0px 10px 10px;
+    color: #000000;
+    margin-left: 1px;
+    height: auto;
+    width: 30px;
+    text-align: center;
+}
+.socialIcons ul li a:hover {
+    font-size: 26px;
+}
+.bigFold {
     width: 100%;
     height: 100vh;
-    background:url("header2.jpg") no-repeat center center fixed;
+    background: url("assets/header.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    box-shadow: 0px 2px 5px #000000;
-    opacity: 1;
 }
-
-#welcome{
+#welcome {
     font-size: 40pt;
     position: relative;
     width: 50%;
@@ -182,376 +335,222 @@ header{
     display: none;
     z-index: 0;
 }
-
-#menu{
-    margin: 15px 15px 0 0;
-    display: none;
-    width: 25px;
-    height: 25px;
-    opacity: 0.6;
-    float: right;
-    padding: 0 0 15px 15px;
-}
-
-
-
-.headerContainer{
-    width:70%;
-    margin: auto;
-
-}
-
-nav ul {
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin: 0 0 0 0;
-}
-
-nav ul li {
-    display: block;
-    position: relative;
-    float: left;
-
-}
-
-nav li ul { 
-    display: none; 
-}
-
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 20px 10px 10px 10px;
-    color: #000000;  
-    margin-left: 1px;
-    height:auto;
-    width:100px;
-    text-align:center;
-
-}
-nav ul li a:hover{
-    color: #65acf2;
-    -o-transition:color .2s ease-out, background 1s ease-in;
-    -ms-transition:color .2s ease-out, background 1s ease-in;
-    -moz-transition:color .2s ease-out, background 1s ease-in;
-    -webkit-transition:color .2s ease-out, background 1s ease-in;
-    /* ...and now override with proper CSS property */
-    transition:color .2s ease-out, background 1s ease-in;
-}
-.socialIcons{
-    float:right;
-    margin-right: 30px;
-}
-
-.socialIcons ul {
-    font-size: 25px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin: 0 0 0 0;
-}
-
-.socialIcons ul li {
-    display: block;
-    position: relative;
-    float: left;
-
-}
-
-.socialIcons li ul { 
-    display: none; 
-}
-
-.socialIcons ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 20px 0px 10px 10px;
-    color: #000000;  
-    margin-left: 1px;
-    height:auto;
-    width:30px;
-    text-align:center;
-
-}
-
-.socialIcons ul li a:hover {
-    font-size: 26px;
-}
-
-.topSection{
-    width:100%;
+#section1 {
+    width: 100%;
     background-color: #e6e7e9;
-    float:left;
+    float: left;
 }
 
-.smallerText{
+#section2 {
+    width: 100%;
+    background-color: #E0E0E0;
+    float: left;
+}
+
+#section3 {
+    width: 100%;
+    background-color: #e9e8e5;
+    float: left;
+}
+.textContainer{
+    width: 100%;
+    margin: 70px auto 70px auto;
+}
+#section1 .innerContainer .textContainer{
+    width: 80%;
+    margin: 20px auto 50px auto;
+    text-align: center;
+}
+#section1 .textContainer h2 {
+    text-align: center;
+    font-size: 2.5em;
+}
+.smallerText {
     font-size: 0.7em;
 }
-
-.work_thumbnails{
+.work_thumbnails {
     float: left;
     width: 30%;
     margin: 0 1.5%;
-    -webkit-border-radius: 200px; /* Saf3+, Chrome */
+    -webkit-border-radius: 200px;
+    /* Saf3+, Chrome */
     border-radius: 200px;
 }
-
-.bottomText{
+.bottomText {
     margin-bottom: 30px;
 }
-
-.myFace{
+#boo {
     width: 260px;
     height: 260px;
     margin: 100px auto 0 auto;
-    background-image: url("webAvi.jpg");
+    background-image: url("assets/boo.jpg");
     background-size: 100% auto;
-    border: 10px solid #e6e7e9;
-    -webkit-border-radius: 200px; /* Saf3+, Chrome */
+    -webkit-border-radius: 200px;
+    /* Saf3+, Chrome */
     border-radius: 200px;
-
 }
-.photos{
-    margin: 20px auto 20px auto;
-    position: relative;
-    width: 90%;
-    max-width: 700px;
-    display: table;
-
-}
-
-
-.photoFill{
-    width: 100%;
-    margin: 20px 0;
-
-}
-li{
-    height: 100% !important;
-}
-
-
-.underWater{
+#myFace {
     width: 100%;
     height: 100%;
     z-index: 99;
     opacity: 1;
-    background-image: url("myshot.jpg");
+    background-image: url("assets/me.jpg");
     background-size: 100% auto;
-    -webkit-border-radius: 200px; /* Saf3+, Chrome */
+    -webkit-border-radius: 200px;
+    /* Saf3+, Chrome */
     border-radius: 200px;
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
     /* Opera 10.5, IE 9 */
     /*-moz-border-radius: 30px;  Disabled for FF1+ */
-
 }
-
-.underWater:hover{
+#myFace:hover {
     opacity: 0;
 }
-
-.middle{
-    width:100%;
-    background-color: #E0E0E0;
-    float:left;
-
+.photos {
+    margin: 20px auto 20px auto;
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    display: table;
+}
+.photoFill {
+    width: 100%;
+    margin: 20px 0;
 }
 
-.myWork{
+.photoFill li {
+    height: 100% !important;
+}
+
+.myWork {
     margin: 20px auto;
     float: left;
     height: auto;
-
-}
-.last{
-    width:100%;
-    background-color: #e9e8e5;
-    float:left;
 }
 
-.textContainer1{
-    width:80%;
-    margin: 20px auto 50px auto;
-    text-align: center;
-
-}
-.textContainer1 h2{
-    text-align: center;
-    font-size: 2.5em;
-
-}
-.textContainer2{
-    width:100%;
-    margin: 70px auto 0 auto;
-
-}
-.textContainer3{
-    width:100%;
-    margin: 70px auto 0 auto;
-
-}
-
-
-footer{
-    width:100%;
+footer {
+    width: 100%;
     height: 200px;
     background-color: #333;
     color: #e5e3e3;
-    float:left;
+    float: left;
     z-index: 0;
 }
-
-.footerText{
+.footerText {
     margin: 95px 0 0 0;
-    color:#ececec;
+    color: #ececec;
     font-size: 0.6em;
     text-align: center;
 }
-
-
-
-
-@media (max-width: 768px){
-    header{
+@media (max-width: 768px) {
+    header {
         height: auto;
         opacity: 1;
     }
-
-    body{
+    body {
         font-size: 1.2em;
     }
-
-    .bigheader{
+    .bigheader {
         height: 200px;
         margin-top: 50px;
     }
-
-    .headerContainer{
+    .headerContainer {
         width: 100%;
         float: left;
         display: none;
     }
-    nav ul{
+    nav ul {
         padding: 15px;
         list-style: none;
         float: left;
     }
     nav ul li {
         float: none;
-
     }
-
-    nav li ul { 
-        display: none; 
+    nav li ul {
+        display: none;
     }
-
     nav ul li a {
         display: block;
         text-decoration: none;
         padding: 25px 5px 10px 10px;
-        color: #000000;  
+        color: #000000;
         margin-left: 0px;
-        width:100px;
-        text-align:left;
+        width: 100px;
+        text-align: left;
     }
-
-
-    #menu{
+    #menu {
         display: block;
     }
-
-    .socialIcons{
+    .socialIcons {
         margin: 15px 15px 0 0;
     }
-
-    .socialIcons ul li{
+    .socialIcons ul li {
         float: none;
     }
-
     .socialIcons ul li a:hover {
         font-size: 25px;
     }
-
-    .innerContainer{
+    .innerContainer {
         width: 90%;
     }
-
-
-    .textContainer1{
-        width:100%;
-        float:left;
+    .textContainer1 {
+        width: 100%;
+        float: left;
         margin: 10px auto 10px auto;
-
     }
-
-    .textContainer2{
-        width:100%;
-        float:none;
+    .textContainer2 {
+        width: 100%;
+        float: none;
         margin: 50px auto 50px auto;
-
     }
-    .textContainer3{
-        width:100%;
-        float:none;
+    .textContainer3 {
+        width: 100%;
+        float: none;
         margin: 50px auto 50px auto;
-
     }
-
-    .blueLink{
+    .blueLink {
         color: #65acf2 !important;
     }
-
-    .myFace{
-        float:none;
+    .myFace {
+        float: none;
         width: 160px;
         height: 160px;
         margin: 60px auto 0 auto;
         background-image: url("myshot.jpg");
         background-size: 100% auto;
         border: 10px solid #e6e7e9;
-        -webkit-border-radius: 100px; /* Saf3+, Chrome */
+        -webkit-border-radius: 100px;
+        /* Saf3+, Chrome */
         border-radius: 100px;
     }
-
-    .topSection{
+    .topSection {
         height: auto;
     }
-
-    .middle{
+    .middle {
         height: auto;
     }
-
-    .last{
+    .last {
         height: auto;
     }
-
-    .introText{
+    .introText {
         margin-bottom: 20px;
     }
-
-    #welcome{
+    #welcome {
         width: auto;
-        top:45%;
+        top: 45%;
         position: relative;
     }
-
-    footer{
+    footer {
         height: auto;
     }
-
-    .footerText{
+    .footerText {
         float: left;
         margin: 15px 0 5px 0;
     }
-    .underWater{
+    .underWater {
         opacity: 0;
     }
-
-
 }
-
-
