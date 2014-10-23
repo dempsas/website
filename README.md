@@ -1,6 +1,6 @@
-My Website Source
+#My Website Source
 
-Simple one pager, Jquery nav, HTML5
+##Simple one page layout with a fixed header for jquery navigation
 
-
+Colors and content and easily be swapped for template to be reused.
 ========

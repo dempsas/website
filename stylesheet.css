@@ -3,143 +3,12 @@ StyleSheet for my website
 @author Adam Dempsey 
 */
 
-/*CSS Reset to be on the safe side*/
+/* CSS reset to be on the safe side */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-a:-webkit-any-link {
-    color: #000000;
-    text-decoration: none;
-    cursor: auto;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol,
-ul {
-    list-style: none;
-}
-blockquote,
-q {
-    quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
-/* 
-
-    ICON FONTS thank you based IcoMoon ^(0_0)^ dunno where I would be without you somedays
-
-*/
-
+/* ICON FONTS thank you based IcoMoon ^(0_0)^ dunno where I would be without you somedays */
 @font-face {
 	font-family: 'icomoon';
 	src:url('assets/fonts/icomoon.eot?-mvmwxv');
@@ -150,7 +19,6 @@ table {
 	font-weight: normal;
 	font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
 	speak: none;
@@ -159,12 +27,10 @@ table {
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
 	/* Better Font Rendering */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
 .icon-logotest2:before {
 	content: "\e604";
 }
@@ -180,16 +46,11 @@ table {
 .icon-linkedin:before {
 	content: "\e603";
 }
+.icon-logo:before{
+    content: "\e604";
+}
 
-
-/* 
-
-    170ish lines down and we are at the real CSS... 
-
-    Yep that happened
-
-*/
-
+/* Fonts and some typography layout */
 body {
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
@@ -203,6 +64,14 @@ p {
     line-height: 1.3em;
     display: inline-block;
 }
+p a {
+    color: #;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+p a:hover{
+    color: #65acf2;
+}
 h2 {
     font-size: 2em;
     line-height: 1.5em;
@@ -210,6 +79,20 @@ h2 {
 .introText {
     margin-bottom: 100px;
 }
+.smallerText {
+    font-size: 0.7em;
+}
+footer p {
+    margin: 95px 0 0 0;
+    width: 100%;
+    color: #ececec;
+    font-size: 0.6em;
+    text-align: center;
+}
+footer p a{
+    color: #
+}
+/* Layout and design */
 .container {
     width: 100%;
     margin: auto;
@@ -219,59 +102,46 @@ h2 {
     z-index: 2;
 }
 .innerContainer {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 header {
     background-color: whitesmoke;
-    opacity: 0.9;
+    opacity: 0.7;
     width: 100%;
-    height: 60px;
+    height: auto;
     float: left;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
 }
-.headerOverlay {
-    background-color: #333;
-    opacity: 0.2;
-}
-#menu {
-    margin: 15px 15px 0 0;
-    display: none;
-    width: 25px;
-    height: 25px;
-    opacity: 0.6;
-    float: right;
-    padding: 0 0 15px 15px;
-}
 .headerContainer {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
+#logo{
+    font-size: 34px;
+    float: left;
+    padding: 5px
+}
+nav{
+    float: right;
+}
 nav ul {
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
+    font-size: 14px;
     list-style: none;
-    margin: 0 0 0 0;
 }
 nav ul li {
     display: block;
     position: relative;
     float: left;
 }
-nav li ul {
-    display: none;
-}
 nav ul li a {
     display: block;
     text-decoration: none;
-    padding: 20px 10px 10px 10px;
-    color: #000000;
-    margin-left: 1px;
-    height: auto;
+    padding: 10px 10px 10px 10px;
+    color: #333;
     width: 100px;
     text-align: center;
 }
@@ -284,39 +154,7 @@ nav ul li a:hover {
     /* ...and now override with proper CSS property */
     transition: color .2s ease-out, background 1s ease-in;
 }
-.socialIcons {
-    float: right;
-    margin-right: 30px;
-}
-.socialIcons ul {
-    font-size: 25px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin: 0 0 0 0;
-}
-.socialIcons ul li {
-    display: block;
-    position: relative;
-    float: left;
-}
-.socialIcons li ul {
-    display: none;
-}
-.socialIcons ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 20px 0px 10px 10px;
-    color: #000000;
-    margin-left: 1px;
-    height: auto;
-    width: 30px;
-    text-align: center;
-}
-.socialIcons ul li a:hover {
-    font-size: 26px;
-}
-.bigFold {
+#bigFold {
     width: 100%;
     height: 100vh;
     background: url("assets/header.jpg") no-repeat center center fixed;
@@ -340,13 +178,11 @@ nav ul li a:hover {
     background-color: #e6e7e9;
     float: left;
 }
-
 #section2 {
     width: 100%;
     background-color: #E0E0E0;
     float: left;
 }
-
 #section3 {
     width: 100%;
     background-color: #e9e8e5;
@@ -365,35 +201,10 @@ nav ul li a:hover {
     text-align: center;
     font-size: 2.5em;
 }
-.smallerText {
-    font-size: 0.7em;
-}
-.work_thumbnails {
-    float: left;
-    width: 30%;
-    margin: 0 1.5%;
-    -webkit-border-radius: 200px;
-    /* Saf3+, Chrome */
-    border-radius: 200px;
-}
-.bottomText {
-    margin-bottom: 30px;
-}
-#boo {
-    width: 260px;
-    height: 260px;
-    margin: 100px auto 0 auto;
-    background-image: url("assets/boo.jpg");
-    background-size: 100% auto;
-    -webkit-border-radius: 200px;
-    /* Saf3+, Chrome */
-    border-radius: 200px;
-}
 #myFace {
     width: 100%;
     height: 100%;
     z-index: 99;
-    opacity: 1;
     background-image: url("assets/me.jpg");
     background-size: 100% auto;
     -webkit-border-radius: 200px;
@@ -408,53 +219,92 @@ nav ul li a:hover {
 #myFace:hover {
     opacity: 0;
 }
-.photos {
-    margin: 20px auto 20px auto;
-    position: relative;
-    width: 90%;
-    max-width: 700px;
-    display: table;
+/* Hidden image for hover over on #myFace */
+#boo {
+    width: 260px;
+    height: 260px;
+    margin: 100px auto 0 auto;
+    background-image: url("assets/boo.jpg");
+    background-size: 100% auto;
+    -webkit-border-radius: 200px;
+    /* Saf3+, Chrome */
+    border-radius: 200px;
 }
-.photoFill {
-    width: 100%;
-    margin: 20px 0;
-}
-
-.photoFill li {
-    height: 100% !important;
-}
-
 .myWork {
     margin: 20px auto;
     float: left;
     height: auto;
 }
-
+.workThumbnails {
+    float: left;
+    width: 30%;
+    margin: 0 1.5%;
+    -webkit-border-radius: 200px;
+    /* Saf3+, Chrome */
+    border-radius: 200px;
+}
 footer {
     width: 100%;
     height: 200px;
-    background-color: #333;
+    background-color: #3A546E ;
     color: #e5e3e3;
     float: left;
     z-index: 0;
 }
-.footerText {
-    margin: 95px 0 0 0;
-    color: #ececec;
-    font-size: 0.6em;
-    text-align: center;
+#socialIcons {
+    width: 165px;
+    margin: 0 auto 0 auto;
 }
+#socialIcons ul {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 0 0;
+}
+#socialIcons ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+#socialIcons li ul {
+    display: none;
+}
+#socialIcons ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 0px 10px 10px;
+    color: #707070;
+    margin-left: 1px;
+    height: auto;
+    width: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+#socialIcons ul li .icon-twitter:hover {
+    color: #00aced; 
+}
+#socialIcons ul li .icon-px:hover {
+    color: #222222;
+}
+#socialIcons ul li .icon-instagram:hover {
+    color: #517fa4;
+}
+#socialIcons ul li .icon-linkedin:hover {
+    color: #007bb6
+}
+/*
+    Responsive layout < 768px Switch to mobile layout
+*/
 @media (max-width: 768px) {
     header {
-        height: auto;
         opacity: 1;
     }
     body {
         font-size: 1.2em;
     }
-    .bigheader {
+    #bigFold {
         height: 200px;
-        margin-top: 50px;
     }
     .headerContainer {
         width: 100%;
@@ -484,55 +334,35 @@ footer {
     #menu {
         display: block;
     }
-    .socialIcons {
-        margin: 15px 15px 0 0;
-    }
-    .socialIcons ul li {
-        float: none;
-    }
-    .socialIcons ul li a:hover {
-        font-size: 25px;
-    }
     .innerContainer {
         width: 90%;
     }
-    .textContainer1 {
+    .textContainer {
         width: 100%;
         float: left;
         margin: 10px auto 10px auto;
     }
-    .textContainer2 {
-        width: 100%;
-        float: none;
-        margin: 50px auto 50px auto;
-    }
-    .textContainer3 {
-        width: 100%;
-        float: none;
-        margin: 50px auto 50px auto;
-    }
-    .blueLink {
-        color: #65acf2 !important;
-    }
-    .myFace {
+    #myFace {
         float: none;
         width: 160px;
         height: 160px;
         margin: 60px auto 0 auto;
-        background-image: url("myshot.jpg");
         background-size: 100% auto;
-        border: 10px solid #e6e7e9;
         -webkit-border-radius: 100px;
         /* Saf3+, Chrome */
         border-radius: 100px;
     }
-    .topSection {
-        height: auto;
+    #boo{
+        float: none;
+        width: 160px;
+        height: 160px;
+        margin: 60px auto 0 auto;
+        background-size: 100% auto;
+        -webkit-border-radius: 100px;
+        /* Saf3+, Chrome */
+        border-radius: 100px;
     }
-    .middle {
-        height: auto;
-    }
-    .last {
+    #section1, #section2, #section3 {
         height: auto;
     }
     .introText {
@@ -549,8 +379,5 @@ footer {
     .footerText {
         float: left;
         margin: 15px 0 5px 0;
-    }
-    .underWater {
-        opacity: 0;
     }
 }

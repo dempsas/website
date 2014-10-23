@@ -1,11 +1,10 @@
 <!DOCTYPE HTML>
 <HTML>
-<!--
-        Dont come in here, I'm naked
-    -->
+<!-- Dont come in here, I'm naked -->
+<!-- Yo this source is on github if your that interested: https://github.com/dempsas/website -->
 
 <head>
-    <TITLE>Adam Dempsey, online portfolio</TITLE>
+    <title>Adam Dempsey, Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
     <meta name="description" content="Website for Adam Dempsey, web developer, I enjoy building minimal, clean websites that look good no matter what the device." />
     <link rel="publisher" href="https://plus.google.com/+AdamDempseyNZ/about" />
@@ -54,8 +53,8 @@
 <body>
     <!--Fixed header for navigation-->
     <header>
-        <img src="menu.png" id="menu" alt="menu" />
         <div class="headerContainer" id="headerContainer">
+            <span id="logo"><a class="icon-logo"></a></span>
             <nav>
                 <ul id="mainNav">
                     <li><a class="nav" href="#section1">About Me</a>
@@ -66,30 +65,16 @@
                     </li>
                 </ul>
             </nav>
-
-            <div class="socialIcons">
-                <ul>
-                    <li>
-                        <a class="icon-twitter" href="http://www.twitter.com/dempsas" title="Twitter"></a>
-                    </li>
-                    <li>
-                        <a class="icon-px" href="http://500px.com/dempsas" title="500px"></a>
-                    </li>
-                    <li>
-                        <a class="icon-linkedin" href="http://lnkd.in/6GDm5w" title="LinkedIn"></a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </header>
-    
+
     <!--Div that is the same height as the viewport for the welcome -->
 
-    <div class="bigFold" data-type="background" data-speed="2">
+    <div id="bigFold" data-type="background" data-speed="2">
         <!--Container div for welcome text -->
         <div id="welcome">Welcome</div>
     </div>
-    <!-- Main content broken into 3 sections. May add more later -->
+    <!-- Main content broken into 3 sections -->
     <div class="container">
         <div id="section1">
             <div class="innerContainer">
@@ -112,11 +97,11 @@
                     <p>Much of my work at Otago Polytechnic is done behind the scenes. Adding requested functionality to the CMS, Building sub sites, and customising pages.</p>
                     <p class="smallerText">I am currently working on a few sites after hours and in the weekends and will be linking them below in the near future</p>
                     <div class="myWork">
-                        <img class="work_thumbnails" src="assets/webThumb.jpg" alt="coming soon" />
-                        <img class="work_thumbnails" src="assets/webThumb.jpg" alt="coming soon" />
-                        <img class="work_thumbnails" src="assets/webThumb.jpg" alt="coming soon" />
+                        <img class="workThumbnails" src="assets/webThumb.jpg" alt="coming soon" />
+                        <img class="workThumbnails" src="assets/webThumb.jpg" alt="coming soon" />
+                        <img class="workThumbnails" src="assets/webThumb.jpg" alt="coming soon" />
                     </div>
-                    <p style="width: 100%; text-align: center;" class="bottomText">If you're interested in working together, flick me an <a style="color: #0099ec" href="mailto:dempsas@gmail.com?subject=Portfolio%20Enquiry" title="Email Me">email</a> 
+                    <p>If you're interested in working together, flick me an <a href="mailto:dempsas@gmail.com?subject=Portfolio%20Enquiry" title="Email Me">email</a> 
                     </p>
                 </div>
             </div>
@@ -126,7 +111,7 @@
             <div class="innerContainer">
                 <div class="textContainer">
                     <h2>Photography</h2>
-                    <p>In-between drinking coffee, taping away at keyboards and annoying sea creatures I also like to point my camera at things. Below is a few of my shots, for more check out my <a style="color: #0099ec" href="http://500px.com/dempsas">500px</a>
+                    <p>In-between drinking coffee, taping away at keyboards and annoying sea creatures I also like to point my camera at things. Below is a few of my shots, for more check out my <a href="http://500px.com/dempsas">500px</a>
                     </p>
                     <div class="flexslider">
                         <ul class="slides">
@@ -147,7 +132,7 @@
                             </li>
                         </ul>
                     </div>
-                    <p class="bottomText">I have also been known to post the odd <a style="color: #0099ec" href="http://instagram.com/dempsas">Instagram</a> here and there</p>
+                    <p>I have also been known to post the odd <a href="http://instagram.com/dempsas">Instagram</a> here and there</p>
                     <br/>
                 </div>
             </div>
@@ -156,10 +141,24 @@
     </div>
     <footer>
         <div class="innerContainer">
-            <div class="footerText">
-                Made in New Zealand from local and imported ingredients | <a style="color: #0099ec" href="mailto:dempsas@gmail.com?subject=Website%20enquiry" title="email">Contact Me</a>
+                <p>Made in New Zealand from local and imported ingredients | <a href="mailto:dempsas@gmail.com?Subject=Website%20Enquiry" title="email me">Contant Me</a></p>
+                <div id="socialIcons">
+                    <ul>
+                        <li>
+                            <a class="icon-twitter" href="http://www.twitter.com/dempsas" title="Twitter"></a>
+                        </li>
+                        <li>
+                            <a class="icon-px" href="http://500px.com/dempsas" title="500px"></a>
+                        </li>
+                        <li>
+                            <a class="icon-instagram" href="" title="imstagram"></a>
+                        </li>
+                        <li>
+                            <a class="icon-linkedin" href="http://lnkd.in/6GDm5w" title="LinkedIn"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
     </footer>
 </body>
 

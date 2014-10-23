@@ -1,11 +1,7 @@
 /*
  * Some jQuery for website niceness
- * 
  * Parallax header, Mobile nav and one page scroll navigation. 
- * 
  */
-
-
 $(document).ready(function() {
     if ($(window).width() > 768) {
         $('div[data-type="background"]').each(function() {
@@ -43,10 +39,7 @@ $(document).ready(function() {
     else {
     }
     $('#welcome').delay('500').fadeIn('3000');
-
-
-
-    $("#menu").click(function() {
+    $("#L").click(function() {
         if ($("#headerContainer").is(":hidden")) {
             $("#headerContainer").slideDown("slow");
         } else {
@@ -57,8 +50,4 @@ $(document).ready(function() {
     $(window).load(function() {
     $('.flexslider').flexslider();
   });
-  
-
-
-
 });
