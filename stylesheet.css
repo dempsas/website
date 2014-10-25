@@ -31,9 +31,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.icon-logotest2:before {
-	content: "\e604";
-}
 .icon-twitter:before {
 	content: "\e600";
 }
@@ -49,7 +46,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .icon-logo:before{
     content: "\e604";
 }
-
 /* Fonts and some typography layout */
 body {
     background-color: #ffffff;
@@ -65,7 +61,7 @@ p {
     display: inline-block;
 }
 p a {
-    color: #;
+    color: #0268A0;
     text-decoration: none;
     transition: all 0.4s ease;
 }
@@ -83,14 +79,14 @@ h2 {
     font-size: 0.7em;
 }
 footer p {
-    margin: 95px 0 0 0;
+    margin: 70px 0 0 0;
     width: 100%;
     color: #ececec;
     font-size: 0.6em;
     text-align: center;
 }
 footer p a{
-    color: #
+    color: #60B6E2
 }
 /* Layout and design */
 .container {
@@ -106,8 +102,7 @@ footer p a{
     margin: auto;
 }
 header {
-    background-color: whitesmoke;
-    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     height: auto;
     float: left;
@@ -123,7 +118,22 @@ header {
 #logo{
     font-size: 34px;
     float: left;
-    padding: 5px
+    padding: 5px;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow:hidden;
+}
+#logo:hover{
+ -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg); 
 }
 nav{
     float: right;
@@ -151,7 +161,6 @@ nav ul li a:hover {
     -ms-transition: color .2s ease-out, background 1s ease-in;
     -moz-transition: color .2s ease-out, background 1s ease-in;
     -webkit-transition: color .2s ease-out, background 1s ease-in;
-    /* ...and now override with proper CSS property */
     transition: color .2s ease-out, background 1s ease-in;
 }
 #bigFold {
@@ -193,7 +202,6 @@ nav ul li a:hover {
     margin: 70px auto 70px auto;
 }
 #section1 .innerContainer .textContainer{
-    width: 80%;
     margin: 20px auto 50px auto;
     text-align: center;
 }
@@ -267,14 +275,11 @@ footer {
     position: relative;
     float: left;
 }
-#socialIcons li ul {
-    display: none;
-}
 #socialIcons ul li a {
     display: block;
     text-decoration: none;
-    padding: 20px 0px 10px 10px;
-    color: #707070;
+    padding: 10px 5px 10px 5px;
+    color: #CACACA;
     margin-left: 1px;
     height: auto;
     width: 30px;
@@ -297,19 +302,21 @@ footer {
     Responsive layout < 768px Switch to mobile layout
 */
 @media (max-width: 768px) {
-    header {
-        opacity: 1;
-    }
     body {
         font-size: 1.2em;
-    }
-    #bigFold {
-        height: 200px;
     }
     .headerContainer {
         width: 100%;
         float: left;
-        display: none;
+    }
+    #bigFold {
+        height: 200px;
+    }
+    #logo{
+     margin-left: 10px; 
+    }
+    nav{
+     display: none;   
     }
     nav ul {
         padding: 15px;
@@ -318,9 +325,6 @@ footer {
     }
     nav ul li {
         float: none;
-    }
-    nav li ul {
-        display: none;
     }
     nav ul li a {
         display: block;
@@ -331,16 +335,13 @@ footer {
         width: 100px;
         text-align: left;
     }
-    #menu {
-        display: block;
-    }
     .innerContainer {
         width: 90%;
     }
     .textContainer {
         width: 100%;
         float: left;
-        margin: 10px auto 10px auto;
+        margin: 30px auto 30px auto;
     }
     #myFace {
         float: none;
@@ -370,14 +371,18 @@ footer {
     }
     #welcome {
         width: auto;
-        top: 45%;
+        top: 50%;
         position: relative;
     }
     footer {
         height: auto;
     }
-    .footerText {
-        float: left;
-        margin: 15px 0 5px 0;
+    
+    footer p{
+        margin: 30px auto 0 auto;
     }
+    #socialIcons ul li a {
+        padding-bottom: 20px;
+    }
+    
 }
