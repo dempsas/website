@@ -79,7 +79,7 @@ h2 {
     font-size: 0.7em;
 }
 footer p {
-    margin: 70px 0 0 0;
+    margin: 65px 0 0 0;
     width: 100%;
     color: #ececec;
     font-size: 0.6em;
@@ -174,7 +174,7 @@ nav ul li a:hover {
 }
 #welcome {
     font-size: 40pt;
-    position: relative;
+    position: fixed;
     width: 50%;
     text-align: center;
     top: 50%;
@@ -257,7 +257,8 @@ footer {
     background-color: #3A546E ;
     color: #e5e3e3;
     float: left;
-    z-index: 0;
+    z-index: 1;
+    position: relative;
 }
 #socialIcons {
     width: 165px;
