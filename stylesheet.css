@@ -250,6 +250,12 @@ nav ul li a:hover {
     -webkit-border-radius: 200px;
     /* Saf3+, Chrome */
     border-radius: 200px;
+    transition: all ease 0.2s;
+}
+
+.workThumbnails:hover{
+    opacity: 0.8;
+    
 }
 footer {
     width: 100%;
@@ -258,6 +264,7 @@ footer {
     color: #e5e3e3;
     float: left;
     z-index: 1;
+    position: relative;
     position: relative;
 }
 #socialIcons {
